@@ -46,3 +46,14 @@ logger.info(f'final_amount_to_be_paid : {final_amount_to_be_paid}')
 
 # Keyword Argument  **kwarg
 
+
+'''
+1. Write a program where you need to take n numbers of inputs from user and return the total sum of it.
+
+'''
+
+
+'''
+2. Write a programme in which functions take logs input from the user and write this into a file. 
+How to write in to file has not
+'''
