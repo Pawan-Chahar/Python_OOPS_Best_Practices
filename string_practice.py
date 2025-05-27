@@ -31,8 +31,6 @@ my_str = "manish kumar"
 # print(my_str.swapcase())
 
 
-
-
 # lst = [2, 2, 30 , 4, 5,6,5,72,5,12]
 # counter = 0
 # for i in my_str:
@@ -42,7 +40,7 @@ my_str = "manish kumar"
 #      counter += 1
 
 
-# print(counter) 
+# print(counter)
 
 # lst = [2, 2, 30 , 4, 5,6,5,72,5,12]
 # counter = 0
@@ -53,23 +51,19 @@ my_str = "manish kumar"
 #      counter += 1
 
 
-# print(counter) 
+# print(counter)
 
 
-'''
+"""
 Q1. Swap the case of the string without using swapcase inbuilt method for string.
 
 Input : Programming Aasan Hai
 Output : pROGRAMMING aASAN hAI
 
-'''
+"""
 
 
-
-
-
-
-'''
+"""
 
 Q2. Print the list of all unique ip addresses?
 
@@ -88,4 +82,4 @@ Output:- ["10.168.155.2","10.168.156.2","10.168.151.2"
            "10.168.155.22","10.168.167.2",
            "10.168.179.28","10.168.155.31" ]
            
-           '''
+           """

@@ -1,22 +1,24 @@
-name = ['manish' , 'ram' ,'Shyam']
+name = ["manish", "ram", "Shyam"]
 
 
-final_result = ' '
+final_result = " "
 
 for i in name:
-    final_result = ' #  '.join(name) 
+    final_result = " #  ".join(name)
     # final_result = final_result +"  " + name
 
 print(final_result)
 
-state_dept_info = [{'state' : 'Bihar' , 'department' : 'IT'} ,
-                   {'state' : 'Delhi' ,'department' : 'Marketing'}]
+state_dept_info = [
+    {"state": "Bihar", "department": "IT"},
+    {"state": "Delhi", "department": "Marketing"},
+]
 
-'''
+"""
 Find out all the employee name who are available in the above condition.
 you dont know exact number of filter condition which will come in the list. It can change each run.
-'''
-query = '''
+"""
+query = """
 Select * from (
     Select e.employee_name , e.state , e.zip , e.salary , d.department
     from employee_tbl e 
@@ -26,14 +28,14 @@ Select * from (
 ) a 
 Where salary > 100000
 
-'''
-from  loguru import logger
+"""
+from loguru import logger
 
 final_result = []
 
 for condition in state_dept_info:
     for key, value in condition.items():
-        final_result.append(f'{key} = {value}')
+        final_result.append(f"{key} = {value}")
 
 
 logger.info(final_result)
@@ -42,34 +44,7 @@ result = "  OR  ".join(final_result)
 
 logger.info(result)
 
-logger.info(query  +"  AND  ( " + result + " )")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+logger.info(query + "  AND  ( " + result + " )")
 
 
 """
@@ -83,26 +58,21 @@ Output = ["m********0@gmail.com","r******2@hotmail.com",
 
         """
 
-Input = ["mverma6250@gmail.com","ramesh02@hotmail.com",
-        "sohansingh@gmail.com","swatirahane@outlook.com"]
+Input = [
+    "mverma6250@gmail.com",
+    "ramesh02@hotmail.com",
+    "sohansingh@gmail.com",
+    "swatirahane@outlook.com",
+]
 
 # for i in Input:
 
 my_var = "mverma6250@gmail.com"
 
-result = my_var.split('@')
+result = my_var.split("@")
 
 result[0]
 print(result)
-
-
-
-
-
-
-
-
-
 
 
 """
