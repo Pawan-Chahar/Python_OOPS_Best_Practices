@@ -15,13 +15,13 @@ class Labour:
     def save_to_database(self):
         print(self.__wage)
         pass
-        # query = "Select id from labours where first_name = %s And last_name = %s"
-        # result = self.crud.read_from_mysql(query, (self.first_name , self.last_name))
+        query = "Select id from labours where first_name = %s And last_name = %s"
+        result = self.crud.read_from_mysql(query, (self.first_name , self.last_name))
 
-        # if result:  #If labour already exists, return existing ID
-        #     logger.info(f"Labour already exists with ID: {result[0][0]}")
-        #     return result[0][0]
-        # pass
+        if result:  #If labour already exists, return existing ID
+            logger.info(f"Labour already exists with ID: {result[0][0]}")
+            return result[0][0]
+        pass
     """
     1. Check if user is already present in table.
     2. If yes then skip saving
